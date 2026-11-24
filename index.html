@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Онлайн-школа [Название школы] – обучение с нуля до результата</title>
+<meta name="description" content="Программа [направление курса] с наставником: занятия онлайн, практика на реальных задачах, помощь с первыми заказами. Запишитесь на пробный урок.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "[Название онлайн-школы]",
+  "description": "Онлайн-обучение [направление курса] с нуля до результата с наставником.",
+  "telephone": "[Телефон]",
+  "address": {"@type": "PostalAddress", "addressLocality": "[Город]", "streetAddress": "[Адрес]"}
+}
+</script>
+<style>
+:root{
+  --ink:#1d2152;
+  --ink-soft:#3a3f7d;
+  --paper:#f6f3ec;
+  --paper-warm:#efe9dc;
+  --white:#ffffff;
+  --accent:#e8890c;
+  --accent-deep:#c96f00;
+  --accent-ink:#ffffff;
+  --line:rgba(29,33,82,.14);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:var(--white);overflow-x:hidden}
+h1,h2,h3,.display{font-family:'Unbounded',sans-serif;line-height:1.12}
+img{max-width:100%;display:block}
+a{color:inherit}
+.slot{color:#d97a1f;font-weight:600}
+.wrap{width:100%;padding-left:5vw;padding-right:5vw}
+section{padding-top:7vw;padding-bottom:7vw}
+
+/* Плашка демо */
+.demo-for{position:fixed;top:12px;left:12px;z-index:99;background:var(--ink);color:#fff;font-size:13px;font-weight:600;padding:8px 14px;border-radius:999px;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+
+/* Шапка */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
+.logo{font-family:'Unbounded';font-weight:700;font-size:1.05rem}
+.logo em{font-style:normal;color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--accent);color:var(--accent-ink);font-weight:800;font-size:1rem;border:none;border-radius:999px;padding:16px 34px;cursor:pointer;text-decoration:none;transition:background .2s,transform .2s}
+.btn:hover{background:var(--accent-deep);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.bar .btn{padding:11px 24px;font-size:.9rem}
+
+/* Hero */
+.hero{background:var(--paper)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:4vw;align-items:start}
+.eyebrow{display:inline-block;background:var(--ink);color:#fff;font-weight:700;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;padding:8px 16px;border-radius:999px;margin-bottom:1.6vw}
+h1{font-size:3.4vw;font-weight:900;margin-bottom:1.6vw}
+h1 .accent{color:var(--accent)}
+.lead{font-size:1.3vw;line-height:1.55;color:var(--ink-soft);max-width:44vw;margin-bottom:2.2vw}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:2.4vw}
+.trust{display:flex;gap:2.4vw;flex-wrap:wrap}
+.trust div{font-size:.95rem;font-weight:600;color:var(--ink-soft);border-left:3px solid var(--accent);padding-left:12px}
+.hero-fig{position:relative}
+.hero-fig img{border-radius:24px;width:100%;height:auto;box-shadow:0 30px 60px rgba(29,33,82,.18)}
+.hero-badge{position:absolute;left:-18px;bottom:24px;background:var(--white);border-radius:16px;padding:14px 20px;box-shadow:0 14px 34px rgba(29,33,82,.16);font-weight:700;font-size:.92rem}
+.hero-badge b{display:block;color:var(--accent);font-family:'Unbounded';font-size:1.15rem}
+
+/* Заголовки секций */
+h2{font-size:2.5vw;font-weight:700;margin-bottom:1.2vw}
+.sub{font-size:1.15vw;color:var(--ink-soft);line-height:1.6;max-width:46vw;margin-bottom:3.4vw}
+
+/* Для кого */
+.who-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6vw}
+.who-card{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:2vw;transition:transform .2s,box-shadow .2s}
+.who-card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(29,33,82,.12)}
+.who-card .num{font-family:'Unbounded';font-weight:900;color:var(--accent);font-size:1.6rem;margin-bottom:.8vw}
+.who-card h3{font-size:1.15rem;margin-bottom:.7vw}
+.who-card p{color:var(--ink-soft);line-height:1.55;font-size:.98rem}
+
+/* Программа */
+.program{background:var(--ink);color:#fff}
+.program h2,.program .sub{color:#fff}
+.program .sub{color:rgba(255,255,255,.75)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4vw;counter-reset:step}
+.step{border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:1.8vw;position:relative}
+.step::before{counter-increment:step;content:"0" counter(step);font-family:'Unbounded';font-weight:900;font-size:2.2rem;color:var(--accent);display:block;margin-bottom:1vw}
+.step h3{font-size:1.02rem;margin-bottom:.6vw}
+.step p{font-size:.9rem;line-height:1.55;color:rgba(255,255,255,.72)}
+
+/* Тарифы */
+.rates-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6vw;align-items:stretch}
+.rate{background:var(--paper);border-radius:22px;padding:2.2vw;display:flex;flex-direction:column;border:2px solid transparent}
+.rate.hot{background:var(--white);border-color:var(--accent);box-shadow:0 24px 50px rgba(232,137,12,.16)}
+.rate .tag{align-self:flex-start;font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:var(--ink);color:#fff;border-radius:999px;padding:6px 14px;margin-bottom:1.1vw}
+.rate.hot .tag{background:var(--accent)}
+.rate h3{font-size:1.2rem;margin-bottom:.9vw}
+.rate ul{list-style:none;margin-bottom:1.6vw;flex:1}
+.rate li{padding:9px 0;border-bottom:1px dashed var(--line);font-size:.94rem;color:var(--ink-soft);line-height:1.45}
+.rate li::before{content:"—";color:var(--accent);font-weight:800;margin-right:8px}
+.price{font-family:'Unbounded';font-weight:700;font-size:1.35rem;margin-bottom:1.3vw}
+.rate .btn{width:100%}
+
+/* Наставник */
+.mentor-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:4vw;align-items:center}
+.mentor-grid img{border-radius:24px;box-shadow:0 26px 55px rgba(29,33,82,.2);width:100%}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:1.2vw;margin-top:2vw}
+.fact{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:1.3vw}
+.fact b{font-family:'Unbounded';font-size:1.05rem;display:block;margin-bottom:.4vw}
+.fact span{font-size:.88rem;color:var(--ink-soft);line-height:1.4}
+
+/* Отзывы */
+.reviews{background:var(--paper-warm)}
+.rev-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3vw;align-items:center}
+.rev-grid img{border-radius:24px;width:100%;box-shadow:0 22px 48px rgba(29,33,82,.16)}
+.rev-card{background:var(--white);border-radius:18px;padding:1.8vw;margin-bottom:1.2vw;border:1px solid var(--line)}
+.rev-card p{font-style:italic;line-height:1.6;color:var(--ink-soft);margin-bottom:.8vw}
+.rev-card b{font-size:.92rem}
+.note{font-size:.8rem;color:var(--ink-soft);margin-top:.6vw}
+
+/* FAQ */
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:700;font-size:1.08rem;padding:1.4vw 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+.faq summary::after{content:"+";font-family:'Unbounded';color:var(--accent);font-size:1.4rem}
+.faq details[open] summary::after{content:"–"}
+.faq .ans{padding:0 0 1.4vw;color:var(--ink-soft);line-height:1.6;max-width:60vw}
+
+/* Финал / форма */
+.final{background:var(--ink);color:#fff;text-align:center}
+.final h2{color:#fff}
+.final .sub{margin-left:auto;margin-right:auto;color:rgba(255,255,255,.75)}
+.form{max-width:620px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.form input{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);border-radius:14px;padding:16px 20px;color:#fff;font-size:1rem;font-family:inherit;outline:none}
+.form input::placeholder{color:rgba(255,255,255,.55)}
+.form input:focus{border-color:var(--accent)}
+.form .btn{padding:18px;font-size:1.05rem}
+.pdn{font-size:.78rem;color:rgba(255,255,255,.55);line-height:1.5;max-width:560px;margin:6px auto 0}
+.pdn a{color:var(--accent);text-decoration:underline}
+
+/* Подвал */
+footer{background:var(--ink);color:rgba(255,255,255,.65);border-top:1px solid rgba(255,255,255,.15);font-size:.9rem}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:2.4vw;padding-bottom:2.4vw}
+.foot b{color:#fff;font-family:'Unbounded';font-size:.95rem}
+
+/* Адаптив */
+@media (max-width:768px){
+  section{padding-top:56px;padding-bottom:56px}
+  .wrap{padding-left:6vw;padding-right:6vw}
+  h1{font-size:8.6vw}
+  .lead{font-size:4.3vw;max-width:none}
+  h2{font-size:6.4vw}
+  .sub{font-size:4vw;max-width:none}
+  .hero-grid,.mentor-grid,.rev-grid{grid-template-columns:1fr;gap:28px}
+  .who-grid,.rates-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .hero-badge{left:8px;bottom:12px;font-size:.8rem;padding:10px 14px}
+  .btn{width:100%;min-height:48px}
+  .bar .btn{width:auto;min-height:40px}
+  .facts{grid-template-columns:1fr}
+  .faq .ans{max-width:none}
+}
+@media (max-width:480px){
+  h1{font-size:9.4vw}
+  .bar .btn{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="demo-for">Демо для demdina1 · по заказу «Создать продающий лендинг для онлайн-школ»</div>
+
+<header>
+  <div class="wrap bar">
+    <div class="logo">[Название школы]<em>.</em></div>
+    <a class="btn" href="#zapis">Записаться</a>
+  </div>
+</header>
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Онлайн-обучение · [Город] и вся Россия</span>
+      <h1><span class="slot">[Название онлайн-школы]</span> — <span class="accent">новая профессия</span> с нуля до первых заказов</h1>
+      <p class="lead"><span class="slot">[Направление курса]</span> за <span class="slot">[срок обучения]</span>: живые занятия с наставником, практика на реальных задачах и помощь с трудоустройством. Пробный урок — бесплатно.</p>
+      <div class="hero-cta">
+        <a class="btn" href="#zapis">Записаться на пробный урок</a>
+        <a class="btn btn-ghost" href="#program">Смотреть программу</a>
+      </div>
+      <div class="trust">
+        <div><span class="slot">[N]</span> выпускников<br>за время работы</div>
+        <div><span class="slot">[N]</span> лет<br>ведём потоки</div>
+        <div>Вернём деньги,<br>если не зайдёт</div>
+      </div>
+    </div>
+    <figure class="hero-fig">
+      <img src="assets/hero.webp" alt="Ученица онлайн-школы занимается за ноутбуком вечером">
+      <div class="hero-badge"><span class="slot">[N]</span> из <span class="slot">[N]</span> выпускников<br>находят работу<b>за [срок] после выпуска</b></div>
+    </figure>
+  </div>
+</section>
+
+<!-- 2. ДЛЯ КОГО -->
+<section>
+  <div class="wrap">
+    <h2>Кому подойдёт этот курс</h2>
+    <p class="sub">Три сценария, с которыми приходят ученики — и которые заканчиваются оффером.</p>
+    <div class="who-grid">
+      <div class="who-card"><div class="num">01</div><h3>Хочу сменить работу</h3><p>Текущая работа не растёт и не платит. Нужна профессия, которую можно освоить без 4 лет вуза и сразу монетизировать.</p></div>
+      <div class="who-card"><div class="num">02</div><h3>Нужен доход из дома</h3><p>Удалённый формат обязателен: с телефона и ноутбука можно учиться вечером, не увольняясь с основного места.</p></div>
+<div class="who-card"><div class="num">03</div><h3>Уже пробовал(а) учиться</h3><p>Бросил(а) видеокурс без наставника. Здесь — живые разборы, дедлайны и группа, бросить сложнее, чем дойти.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. ПРОГРАММА -->
+<section class="program" id="program">
+  <div class="wrap">
+    <h2>Как устроено обучение</h2>
+    <p class="sub">Путь от первого урока до первого заказа — <span class="slot">[срок обучения]</span>. Каждый этап заканчивается проверкой наставником.</p>
+    <div class="steps">
+      <div class="step"><h3>База и инструменты</h3><p>Ставим <span class="slot">[инструменты профессии]</span>, разбираем термины, первая практика на учебных задачах.</p></div>
+      <div class="step"><h3>Практика на реальных кейсах</h3><p>Работаем с проектами как в жизни: бриф, дедлайн, разбор ошибок наставником вживую.</p></div>
+      <div class="step"><h3>Портфолио и резюме</h3><p>Собираем 3–4 сильные работы, оформляем профиль и готовимся к собеседованиям.</p></div>
+      <div class="step"><h3>Первые заказы</h3><p>Помогаем с первыми клиентами и трудоустройством: вакансии партнёров и разбор откликов.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. ТАРИФЫ -->
+<section id="rates">
+  <div class="wrap">
+    <h2>Тарифы обучения</h2>
+    <p class="sub">Цены — демо-заглушки, финальный прайс подставим под продукт школы. Оплата частями доступна на всех тарифах.</p>
+    <div class="rates-grid">
+      <div class="rate">
+        <span class="tag">Самостоятельный</span>
+        <h3>Записи + чат</h3>
+        <ul>
+          <li>Все уроки потока в записи</li>
+          <li>Учебные задания с авто-проверкой</li>
+          <li>Общий чат потока</li>
+        </ul>
+        <div class="price"><span class="slot">[Цена тарифа]</span> ₽</div>
+        <a class="btn" href="#zapis">Выбрать тариф</a>
+      </div>
+      <div class="rate hot">
+        <span class="tag">Выбирают чаще</span>
+        <h3>С наставником</h3>
+        <ul>
+          <li>Живые занятия 2 раза в неделю</li>
+          <li>Личный разбор каждой работы</li>
+          <li>Портфолио и подготовка к собеседованиям</li>
+          <li>Чат поддержки 7 дней в неделю</li>
+        </ul>
+        <div class="price"><span class="slot">[Цена тарифа]</span> ₽</div>
+        <a class="btn" href="#zapis">Выбрать тариф</a>
+      </div>
+      <div class="rate">
+        <span class="tag">Максимум</span>
+        <h3>Под ключ до оффера</h3>
+        <ul>
+          <li>Всё из тарифа «С наставником»</li>
+          <li>Персональный план до трудоустройства</li>
+          <li>Сопровождение первых заказов</li>
+        </ul>
+        <div class="price"><span class="slot">[Цена тарифа]</span> ₽</div>
+        <a class="btn" href="#zapis">Выбрать тариф</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. НАСТАВНИК -->
+<section>
+  <div class="wrap mentor-grid">
+    <img src="assets/mentor.webp" alt="Наставник онлайн-школы — фото демо, заменить на фото наставника">
+    <div>
+      <h2>С вами работает наставник, а не «методист»</h2>
+      <p class="sub" style="margin-bottom:0">Ведёт поток практикующий специалист: показывает на своих проектах, разбирает ваши работы вживую и отвечает в чате в течение дня.</p>
+      <div class="facts">
+        <div class="fact"><b><span class="slot">[Имя наставника]</span></b><span><span class="slot">[Профессия/специализация]</span></span></div>
+        <div class="fact"><b><span class="slot">[Опыт работы]</span></b><span>в профессии — только подтверждённые факты</span></div>
+        <div class="fact"><b><span class="slot">[N]</span> потоков</b><span>проведено со школьниками школы</span></div>
+        <div class="fact"><b>Разбор вживую</b><span>каждое задание, без записей-ответов</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. ОТЗЫВЫ -->
+<section class="reviews">
+  <div class="wrap rev-grid">
+    <img src="assets/graduates.webp" alt="Выпускницы онлайн-школы радуются результату — фото демо">
+    <div>
+      <h2>Что говорят выпускники</h2>
+      <p class="sub" style="margin-bottom:2vw">Сюда встанут реальные отзывы — дословно, из открытых источников школы.</p>
+      <div class="rev-card"><p>«<span class="slot">[Текст отзыва выпускника — вставить дословно из отзывов школы]</span>»</p><b>— <span class="slot">[Имя выпускника]</span>, выпуск <span class="slot">[N]</span></b></div>
+      <div class="rev-card"><p>«<span class="slot">[Текст отзыва выпускника — вставить дословно из отзывов школы]</span>»</p><b>— <span class="slot">[Имя выпускника]</span>, выпуск <span class="slot">[N]</span></b></div>
+      <p class="note">Фото на этой странице — демо, перед запуском заменяются на реальные фото школы и выпускников.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7. FAQ -->
+<section class="faq">
+  <div class="wrap">
+    <h2>Вопросы, которые задают перед записью</h2>
+    <p class="sub">Честные ответы без маркетинга.</p>
+    <details><summary>Подойдёт ли мне курс без опыта?</summary><div class="ans">Да, программа рассчитана на старт с нуля. Первый модуль — база и инструменты, ничего заранее знать не нужно.</div></details>
+    <details><summary>Сколько времени занимает обучение?</summary><div class="ans">Ориентир — <span class="slot">[часов в неделю]</span> в неделю: два живых занятия плюс практика. Итоговый срок потока — <span class="slot">[срок обучения]</span>.</div></details>
+    <details><summary>Что, если мне не подойдёт формат?</summary><div class="ans">Вернём оплату за непройденную часть программы — условия фиксируем в договоре до старта.</div></details>
+    <details><summary>Куда ведёт кнопка «Записаться»?</summary><div class="ans">На форму заявки: имя и телефон. Менеджер школы свяжется в течение <span class="slot">[срок ответа]</span> и подберёт поток. Финальный канал заявки настроим под вашу CRM или мессенджер.</div></details>
+  </div>
+</section>
+
+<!-- 8. ФИНАЛ -->
+<section class="final" id="zapis">
+  <div class="wrap">
+    <h2>Забронируйте место в потоке</h2>
+    <p class="sub">Пробный урок бесплатный и ни к чему не обязывает. Оставьте контакты — пришлём программу и ответим на вопросы.</p>
+    <form class="form" action="#" method="post">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+      <button class="btn" type="submit">Записаться на пробный урок</button>
+    </form>
+    <p class="pdn">Нажимая кнопку, вы соглашаетесь с <a href="#">политикой обработки персональных данных</a>. Ваши данные уходят только менеджеру школы и не передаются третьим лицам.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div><b>[Название школы].</b><br><span class="slot">[Адрес — спросить у заказчика]</span>, <span class="slot">[Город]</span></div>
+    <div>Телефон: <span class="slot">[Телефон — спросить у заказчика]</span><br>Часы работы: <span class="slot">[Часы — спросить у заказчика]</span></div>
+    <div>© 2026 · <a href="#">Политика обработки ПДн</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
